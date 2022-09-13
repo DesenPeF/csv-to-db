@@ -1,0 +1,34 @@
+﻿@model ConnectionStringView
+
+<form class="container" method="post" asp-action="ConnectDb">
+	<div class="row">
+		<div class="col-md-6">
+			<h3 class="text-center">Banco Antigo</h3>
+			<div class="col">
+				<div class="form-group">
+					<label for="" asp-for="Server" class="form-label">Server</label>
+					<input type="text" asp-for="Server" class="form-control">
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-group">
+					<label for="" asp-for="Database" class="form-label">Database</label>
+					<input type="text" asp-for="Database" class="form-control">
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-goup">
+					<label for="" asp-for="User" class="form-label">User</label>
+					<input type="text" asp-for="User" class="form-control">
+				</div>
+			</div>
+			<div class="col">
+				<div class="form-goup">
+					<label for="" asp-for="Password" class="form-label">Password</label>
+					<input type="password" asp-for="Password" class="form-control">
+				</div>
+			</div>
+		</div>
+		<button type="submit">Enviar</button>
+	</div>
+</form>
